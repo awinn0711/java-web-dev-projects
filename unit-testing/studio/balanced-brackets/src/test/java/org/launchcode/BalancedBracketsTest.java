@@ -52,7 +52,11 @@ class BalancedBracketsTest {
         assertFalse(BalancedBrackets.hasBalancedBrackets("[][]]["));
     }
     @Test
-    public void emptyTest() {
-        assertEquals(true, true);
+    public void oppositeBracketsInsideStringReturnsFalse() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("Launch]Code["));
     }
+//    @Test
+//    public void emptyTest() {
+//        assertEquals(true, true);
+//    }
 }
