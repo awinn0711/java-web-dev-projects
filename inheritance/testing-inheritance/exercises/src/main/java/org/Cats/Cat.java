@@ -1,3 +1,5 @@
+package org.Cats;
+
 public class Cat {
 
     private boolean tired = false;
