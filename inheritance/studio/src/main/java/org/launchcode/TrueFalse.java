@@ -3,23 +3,24 @@ package org.launchcode;
 import java.util.Scanner;
 
 public class TrueFalse extends Question {
-    private String correctAnswer;
-    private String userAnswer;
-    private int score;
 
     public TrueFalse(String question, String correctAnswer) {
-        super(question);
-        this.correctAnswer = correctAnswer;
+        super(question, correctAnswer);
     }
-
-    private int questionAndAnswers() {
-        askQuestion();
+    public int getScore() {
+        return this.score;
+    }
+    public String getCorrectAnswer(){
+        return this.correctAnswer;
+    }
+    @Override
+    public void askQuestion() {
+        System.out.println(this.question);
         System.out.println("1.True \n 2.False");
-        userAnswer = input.nextLine();
-        if(userAnswer.toLowerCase() == correctAnswer.toLowerCase()) {
-            score = 1;
+        String userAnswer = input.next();
+        if(userAnswer.toLowerCase().equals(correctAnswer.toLowerCase())) {
+            this.score = 1;
         }
-        return score;
     }
 
 }
