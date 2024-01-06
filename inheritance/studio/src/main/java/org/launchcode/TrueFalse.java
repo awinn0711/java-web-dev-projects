@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class TrueFalse extends Question {
 
-    public TrueFalse(String question, String correctAnswer) {
-        super(question, correctAnswer);
+    public final String correctAnswer;
+    public TrueFalse(String question, String aCorrectAnswer) {
+        super(question);
+        correctAnswer = aCorrectAnswer;
     }
     public int getScore() {
         return this.score;

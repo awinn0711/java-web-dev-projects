@@ -5,15 +5,17 @@ import java.util.Collections;
 
 public class MultipleChoice extends Question {
 
+    public final String correctAnswer;
     ArrayList<String> allAnswers = new ArrayList<>();
-    public MultipleChoice(String question, String correctAnswer, ArrayList<String> someAnswers){
-        super(question, correctAnswer);
+    public MultipleChoice(String question, String aCorrectAnswer, ArrayList<String> someAnswers){
+        super(question);
+        correctAnswer = aCorrectAnswer;
         someAnswers = allAnswers;
     }
     @Override
     public void askQuestion() {
         allAnswers.add(correctAnswer);
-        //TODO randomize answers array
+//        Randomizes answer array
         Collections.shuffle(allAnswers);
         System.out.println(question);
         for(String answer : allAnswers) {
