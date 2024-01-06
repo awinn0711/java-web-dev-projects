@@ -5,7 +5,15 @@ public class Main {
 
         // TODO: Declare and initialize a CD and a DVD object.
         CD newCD = new CD("A cool CD");
-        newCD.spinDisc();
+        DVD newDVD = new DVD("A super rad movie");
         // TODO: Call each CD and DVD method to verify that they work as expected.
+        newCD.spinDisc();
+        newCD.readData();
+        newCD.writeData();
+
+        newDVD.spinDisc();
+        newDVD.readData();
+        newDVD.writeData();
+
     }
 }

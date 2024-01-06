@@ -15,10 +15,10 @@ public class CD extends BaseDisc implements OpticalDisc{
     }
     @Override
     public void readData() {
-
+        System.out.println("The title of this CD is " + this.getTitle());
     }
     @Override
     public void writeData(){
-
+        System.out.println("Oops! This disc has already been written.");
     }
 }
