@@ -9,18 +9,14 @@ public class TrueFalse extends Question {
         super(question);
         correctAnswer = aCorrectAnswer;
     }
-    public int getScore() {
-        return this.score;
-    }
     public String getCorrectAnswer(){
         return this.correctAnswer;
     }
     @Override
     public void askQuestion() {
-        System.out.println(this.question);
-        System.out.println("1.True \n 2.False");
+        System.out.println(this.question + " \nEnter True or False") ;
         String userAnswer = input.next();
-        if(userAnswer.toLowerCase().equals(correctAnswer.toLowerCase())) {
+        if(userAnswer.equalsIgnoreCase(correctAnswer)) {
             this.score = 1;
         }
     }

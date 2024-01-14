@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public abstract class Question {
     public String question;
-    public int score;
+    public double score;
     Scanner input = new Scanner(System.in);
 
     public Question(String aQuestion) {

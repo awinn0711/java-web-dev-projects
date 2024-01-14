@@ -5,10 +5,10 @@ import java.util.Collections;
 
 public class CheckBox extends Question {
 
-    ArrayList<String> wrongAnswers = new ArrayList<>();
-    ArrayList<String> correctAnswers = new ArrayList<>();
-    ArrayList<String> allAnswers = new ArrayList<>();
-    Integer pointValue = 0;
+    public ArrayList<String> wrongAnswers = new ArrayList<>();
+    public ArrayList<String> correctAnswers = new ArrayList<>();
+    public ArrayList<String> allAnswers = new ArrayList<>();
+    public double pointValue = 0;
 
     public CheckBox(String question, ArrayList<String> wrongAnswers, ArrayList<String> correctAnswers){
         super(question);
