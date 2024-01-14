@@ -18,7 +18,7 @@ public class Test {
         CheckBox question3 = new CheckBox("Which of these are primary colors?", new ArrayList<>(), new ArrayList<>());
         Collections.addAll(question3.wrongAnswers, "Purple", "Magenta");
         Collections.addAll(question3.correctAnswers, "Red", "Blue");
-g//        question3.askQuestion();
+//        question3.askQuestion();
 //        System.out.println(question3.score);
 //        System.out.println(question3.pointValue);
 
